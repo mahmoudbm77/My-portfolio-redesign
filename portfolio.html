@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mahmoud Ben Mousa — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <nav class="wrap">
+    <div class="brand">~/<span>mahmoud</span></div>
+    <ul class="navlinks">
+      <li><a href="#about">about</a></li>
+      <li><a href="#skills">skills</a></li>
+      <li><a href="#projects">projects</a></li>
+      <li><a href="#experience">experience</a></li>
+      <li><a href="#contact">contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="status-chip"><span class="dot"></span>Open to freelance work and collaborations</div>
+      <h1>Hi, I'm <span class="accent">Mahmoud</span>.<br>Building things on the web.</h1>
+      <p class="role">Software Engineering Student · Frontend Development &amp; Problem Solving</p>
+      <p class="desc">Student from Tripoli, Libya. Most of my time goes into algorithms and data structures, and I like turning small ideas into things that actually work — one piece at a time.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#projects">View projects →</a>
+        <a class="btn btn-ghost" href="#contact">Get in touch</a>
+      </div>
+    </div>
+
+    <div class="terminal">
+      <div class="term-bar">
+        <span class="r"></span><span class="y"></span><span class="g"></span>
+        <span class="title">whoami.sh</span>
+      </div>
+      <div class="term-body">
+        <div class="l"><span class="prompt">$</span> whoami</div>
+        <div class="l out">mahmoud-ben-mousa</div>
+        <div class="l"><span class="prompt">$</span> cat stack.txt</div>
+        <div class="l out">C · Python · JavaScript · PHP · Git</div>
+        <div class="l"><span class="prompt">$</span> ./run-scan.sh --target=career</div>
+        <div class="l ok">✔ 0 critical issues found</div>
+        <div class="l warn">⚠ 1 open item: "open to freelance work &amp; collaborations"</div>
+        <div class="l"><span class="prompt">$</span> <span class="cursor"></span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section id="about">
+  <div class="wrap">
+    <h2><span class="num">01</span> About</h2>
+    <div class="about-grid">
+      <div>
+        <p><strong>Mahmoud Ben Mousa, a student from Tripoli.</strong> Most of my time goes into algorithms and data structures, and I try out small ideas of my own to build on step by step. I focus on frontend development and UI/UX — building clean, responsive interfaces and thinking through layout, color, and flow so a page feels simple and easy to use.</p>
+        <p>Right now I'm focused on strengthening that foundation and building small projects to put what I learn into practice. I'm also a few levels into the Newcastle English course at Nofalain in Tripoli, mostly to get more comfortable with technical English and talking to teams online.</p>
+      </div>
+      <div class="stat-list">
+        <div class="stat-row"><span class="k">Location</span><span class="v">Tripoli, Libya</span></div>
+        <div class="stat-row"><span class="k">Focus</span><span class="v">Frontend Development &amp; UI/UX</span></div>
+        <div class="stat-row"><span class="k">Education</span><span class="v">BSc Software Engineering, University of Tripoli</span></div>
+        <div class="stat-row"><span class="k">Languages</span><span class="v">Arabic, English</span></div>
+        <div class="stat-row"><span class="k">Available</span><span class="v">Freelance work &amp; collaborations</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SKILLS ================= -->
+<section id="skills">
+  <div class="wrap">
+    <h2><span class="num">02</span> Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <span class="tag">Languages</span>
+        <h3>Core</h3>
+        <ul>
+          <li>C</li><li>Python</li><li>JavaScript</li><li>PHP</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <span class="tag">Web</span>
+        <h3>Frontend &amp; UI/UX</h3>
+        <ul>
+          <li>HTML/CSS</li><li>Responsive Design</li><li>Layout &amp; Flow</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <span class="tag">Concepts</span>
+        <h3>Foundations</h3>
+        <ul>
+          <li>Data Structures</li><li>Algorithms</li><li>Problem Solving</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <span class="tag">Tools &amp; Soft Skills</span>
+        <h3>Tooling</h3>
+        <ul>
+          <li>Git</li><li>GitHub</li><li>Technical English</li><li>Teamwork</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section id="projects">
+  <div class="wrap">
+    <h2><span class="num">03</span> Projects</h2>
+
+    <div class="project">
+      <div class="idx">01</div>
+      <div>
+        <div class="project-head">
+          <h3>Fine Track System</h3>
+          <span class="status">Live</span>
+        </div>
+        <p>A web-based system for managing traffic violations — authorities track fines, and drivers can check and pay theirs online.</p>
+        <div class="stack-row">
+          <span>PHP</span><span>MySQL</span><span>AJAX</span>
+        </div>
+        <div class="project-links">
+          <a href="https://finetrack.freedev.app/" target="_blank" rel="noopener">Live demo →</a>
+          <a href="https://github.com/mahmoudbm77/Fine-Track-System" target="_blank" rel="noopener">View code →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project">
+      <div class="idx">02</div>
+      <div>
+        <div class="project-head">
+          <h3>Trend Digital Media — Agency Portfolio Site</h3>
+          <span class="status">Live</span>
+        </div>
+        <p>A digital advertising agency offering photography, reels, paid ads, and design services. I built their portfolio website, showcasing work across six categories.</p>
+        <div class="stack-row">
+          <span>HTML</span><span>CSS</span><span>JavaScript</span>
+        </div>
+        <div class="project-links">
+          <a href="https://trenddigitalmedia.ly" target="_blank" rel="noopener">Live demo →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project">
+      <div class="idx">03</div>
+      <div>
+        <div class="project-head">
+          <h3>Cafe Menu</h3>
+          <span class="status">In progress</span>
+        </div>
+        <p>A responsive digital menu website for a café — customers browse categories and view items with prices. Currently under development; the name shown is a placeholder for demo purposes.</p>
+        <div class="stack-row">
+          <span>HTML</span><span>CSS</span><span>JavaScript</span>
+        </div>
+        <div class="project-links">
+          <a href="https://cafe-menu-test.vercel.app/" target="_blank" rel="noopener">Live demo →</a>
+          <a href="https://github.com/mahmoudbm77/cafe-menu-test" target="_blank" rel="noopener">View code →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project">
+      <div class="idx">04</div>
+      <div>
+        <div class="project-head">
+          <h3>Zekr — Islamic Telegram Bot</h3>
+          <span class="status">Live</span>
+        </div>
+        <p>A Telegram bot for daily Islamic practice — morning/evening adhkar, the full Quran pulled live from an external API with local caching, and an interactive tasbih counter.</p>
+        <div class="stack-row">
+          <span>Python</span><span>python-telegram-bot</span>
+        </div>
+        <div class="project-links">
+          <a href="https://t.me/zekr15_bot" target="_blank" rel="noopener">Live demo →</a>
+          <a href="https://github.com/mahmoudbm77/zekr-telegram-bot" target="_blank" rel="noopener">View code →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project">
+      <div class="idx">05</div>
+      <div>
+        <div class="project-head">
+          <h3>Ajrli</h3>
+          <span class="status">Concept</span>
+        </div>
+        <p>A Libyan property rental app targeting a summer 2026 launch — presented as a front-end slide deck covering marketing strategy, challenges and solutions, engagement plan, and future vision, in a dark ocean and cyan theme.</p>
+        <div class="stack-row">
+          <span>HTML</span><span>CSS</span><span>JavaScript</span>
+        </div>
+        <div class="project-links">
+          <a href="https://ahme-dtdm.vercel.app/" target="_blank" rel="noopener">Live demo →</a>
+          <a href="https://github.com/mahmoudbm77/Ajrli" target="_blank" rel="noopener">View code →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= EXPERIENCE ================= -->
+<section id="experience">
+  <div class="wrap">
+    <h2><span class="num">04</span> Experience &amp; Education</h2>
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="period">2023 — Present</div>
+        <h3>BSc in Software Engineering</h3>
+        <div class="org">University of Tripoli</div>
+        <p>Focused on algorithms, data structures, and building small projects to put what I learn into practice.</p>
+      </div>
+      <div class="tl-item">
+        <div class="period">Ongoing</div>
+        <h3>Newcastle English Course</h3>
+        <div class="org">Nofalain, Tripoli</div>
+        <p>A few levels in, mostly to get more comfortable with technical English and talking to teams online.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact">
+  <div class="wrap">
+    <div class="contact-box">
+      <div class="eyebrow">Get in touch</div>
+      <h2>Let's build something.</h2>
+      <p>Got a project, a role to fill, or just want to talk shop? My inbox is open.</p>
+      <div class="contact-links">
+        <a class="btn btn-primary" href="mailto:bmmahmoud28@gmail.com">Email me</a>
+        <a class="btn btn-ghost" href="https://github.com/mahmoudbm77" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/mahmoud-ben-mousa-220ba6323" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn btn-ghost" href="https://t.me/Ma7moud_bm" target="_blank" rel="noopener">Telegram</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">© <span id="year"></span> Mahmoud Ben Mousa. Built with care.</div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

@@ -25,7 +25,7 @@ This is a redesign of my personal portfolio website, rebuilt with a new terminal
 4. Fully static — no setup or server required
 
 ## Live Demo
-https://mahmoud-portfolio.bmmahmoud28.workers.dev/
+https://my-portfolio-redesign.vercel.app/
 
 ## Tech Stack
 

@@ -251,8 +251,40 @@
   <div class="wrap">© <span id="year"></span> Mahmoud Ben Mousa. Built with care.</div>
 </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/lenis@1/dist/lenis.min.js"></script>
 <script>
   document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Smooth scroll interpolation (lerp-based) via Lenis
+  // Skipped entirely if the user's OS asks for reduced motion.
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (window.Lenis && !prefersReducedMotion) {
+    const lenis = new Lenis({
+      duration: 1.1,          // how "floaty" the glide feels — higher = slower settle
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // ease-out
+      smoothWheel: true,
+      wheelMultiplier: 1,
+      touchMultiplier: 1.5,
+    });
+
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+    requestAnimationFrame(raf);
+
+    // keep in-page anchor links (#about, #skills, ...) gliding through Lenis
+    document.querySelectorAll('a[href^="#"]').forEach((link) => {
+      link.addEventListener('click', (e) => {
+        const id = link.getAttribute('href');
+        const target = document.querySelector(id);
+        if (target) {
+          e.preventDefault();
+          lenis.scrollTo(target, { offset: -70 }); // offset for the sticky header
+        }
+      });
+    });
+  }
 </script>
 
 </body>
